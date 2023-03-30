@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BoxBtn = styled.ul`
     list-style: none;
+    gap:10px;
     width:600px;
     margin: 0;
     padding-left: 0;
@@ -20,7 +21,6 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: red;
     color: white;
     cursor: pointer;

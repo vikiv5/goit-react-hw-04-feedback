@@ -1,30 +1,30 @@
 import React from "react";
 import  PropTypes from "prop-types"
-import {Container , Value , Option } from './Statistics.styled'
+import {Container , Option } from './Statistics.styled'
 
 const Statistics = ({good, neutral, bad , total, positivePercentage }) => {
     return ( <Container>
         <li>
-            <Option>Good:</Option>
-            <Value name = "good" >{good}</Value>
+            <Option>Good: {good}</Option>
+            
         </li>
         <li>
-            <Option>Neutral:</Option>
-            <Value name = "neutral" >{neutral}</Value>
+            <Option>Neutral: {neutral}</Option>
+            
         </li>
         <li>
-            <Option>Bad:</Option>
-            <Value name = "bad" >{bad}</Value>
-        </li>
-
-        <li>
-            <Option>Total:</Option>
-            <Value name = "total" >{total}</Value>
+            <Option>Bad: {bad}</Option>
+    
         </li>
 
         <li>
-            <Option>Positive feedback:</Option>
-            <Value name = "positivePercentage " >{positivePercentage }</Value>
+            <Option>Total: {total}</Option>
+        
+        </li>
+
+        <li>
+            <Option>Positive feedback: {positivePercentage}%</Option>
+        
         </li>
         
     </Container>
@@ -37,7 +37,7 @@ Statistics.propTypes ={
     neutral: PropTypes.number.isRequired,
     bad: PropTypes.number.isRequired,
     total: PropTypes.number.isRequired,
-    positivePercentage: PropTypes.string.isRequired
+
 
 }
 
